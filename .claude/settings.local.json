@@ -4,7 +4,18 @@
       "Bash(npm -v)",
       "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --no-eslint --import-alias \"@/*\" --use-npm --yes)",
       "Bash(mkdir -p /tmp/claude-1000/-home-temu-final/98b9ec63-42e3-47aa-a46c-6ed039c466f6/scratchpad/backup)",
-      "Bash(mv /home/temu/final/CLAUDE.md /tmp/claude-1000/-home-temu-final/98b9ec63-42e3-47aa-a46c-6ed039c466f6/scratchpad/backup/)"
+      "Bash(mv /home/temu/final/CLAUDE.md /tmp/claude-1000/-home-temu-final/98b9ec63-42e3-47aa-a46c-6ed039c466f6/scratchpad/backup/)",
+      "Bash(npx shadcn@latest init -d)",
+      "Bash(npx shadcn@latest add sheet navigation-menu separator badge -y)",
+      "Bash(npx @biomejs/biome@latest init)",
+      "Bash(npm install *)",
+      "Bash(npx biome *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(npm run *)",
+      "Bash(echo \"started PID $!\")",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(kill 28973)",
+      "Bash(npx tsc *)"
     ]
   }
 }
