@@ -44,6 +44,10 @@ export type ScoreboardStat = {
 	suffix?: string;
 };
 
+export type ContactCopy = {
+	headline: string;
+};
+
 export type SiteConfig = {
 	name: string;
 	email: string;

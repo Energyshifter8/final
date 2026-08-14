@@ -1,9 +1,10 @@
 import { AboutSection } from "@/components/sections/about";
+import { ContactSection } from "@/components/sections/contact/contact-section";
 import { Hero } from "@/components/sections/hero";
 import { ServicesSection } from "@/components/sections/services/services-section";
 import { WorkSection } from "@/components/sections/work/work-section";
 
-const sections = ["Work case study", "Contact / Footer"];
+const sections = ["Work case study"];
 
 export default function Home() {
 	return (
@@ -22,6 +23,7 @@ export default function Home() {
 					))}
 				</ul>
 			</div>
+			<ContactSection />
 		</div>
 	);
 }
