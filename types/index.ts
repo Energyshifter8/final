@@ -22,6 +22,16 @@ export type WorkItem = {
 	year?: number;
 };
 
+export type ServiceItem = {
+	id: string;
+	code: string;
+	title: string;
+	primaryTags: string[];
+	secondaryTags: string[];
+	fromLabel: string;
+	toLabel: string;
+};
+
 export type SiteConfig = {
 	name: string;
 	email: string;
