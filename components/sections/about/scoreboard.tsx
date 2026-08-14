@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { scoreboardStats } from "@/content/scoreboard";
-import { prefersReducedMotion } from "@/lib/utils";
+import { prefersReducedMotion } from "@/lib/use-reduced-motion";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 

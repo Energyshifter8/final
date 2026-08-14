@@ -22,7 +22,8 @@
       "Bash(awk '{print $2}')",
       "Bash(xargs -r kill)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/work/does-not-exist)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/work/aurora-retail)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/work/aurora-retail)",
+      "Bash(npm view *)"
     ]
   }
 }

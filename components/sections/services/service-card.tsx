@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRight } from "lucide-react";
 import { useRef } from "react";
-import { prefersReducedMotion } from "@/lib/utils";
+import { prefersReducedMotion } from "@/lib/use-reduced-motion";
 import type { ServiceItem } from "@/types";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);

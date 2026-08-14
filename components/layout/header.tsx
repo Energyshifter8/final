@@ -1,7 +1,9 @@
 "use client";
 
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,10 +14,14 @@ import {
 } from "@/components/ui/navigation-menu";
 import { navLinks } from "@/content/nav";
 import { siteConfig } from "@/content/site";
+import { prefersReducedMotion } from "@/lib/use-reduced-motion";
 import { cn } from "@/lib/utils";
+
+gsap.registerPlugin(useGSAP);
 
 export function Header() {
 	const [isScrolled, setIsScrolled] = useState(false);
+	const headerRef = useRef<HTMLElement>(null);
 
 	useEffect(() => {
 		const handleScroll = () => setIsScrolled(window.scrollY > 8);
@@ -24,8 +30,23 @@ export function Header() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
+	useGSAP(
+		() => {
+			if (prefersReducedMotion()) return;
+
+			gsap.from(headerRef.current, {
+				opacity: 0,
+				y: -16,
+				duration: 0.6,
+				ease: "power3.out",
+			});
+		},
+		{ scope: headerRef },
+	);
+
 	return (
 		<header
+			ref={headerRef}
 			className={cn(
 				"sticky top-0 z-50 border-b transition-colors duration-300",
 				isScrolled

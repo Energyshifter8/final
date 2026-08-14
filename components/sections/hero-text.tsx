@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
 import { heroCopy } from "@/content/hero";
-import { prefersReducedMotion } from "@/lib/utils";
+import { prefersReducedMotion } from "@/lib/use-reduced-motion";
 
 gsap.registerPlugin(useGSAP);
 

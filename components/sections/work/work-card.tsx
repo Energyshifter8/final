@@ -7,7 +7,7 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
 import { Badge } from "@/components/ui/badge";
-import { prefersReducedMotion } from "@/lib/utils";
+import { prefersReducedMotion } from "@/lib/use-reduced-motion";
 import type { WorkItem } from "@/types";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);

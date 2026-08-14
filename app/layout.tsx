@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter } from "next/font/google";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
+import { LenisProvider } from "@/components/lenis-provider";
 import "./globals.css";
 
 const fontHeading = Bricolage_Grotesque({
@@ -26,9 +27,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 			className={`${fontHeading.variable} ${fontBody.variable} h-full antialiased`}
 		>
 			<body className="flex min-h-full flex-col">
-				<Header />
-				<main className="flex-1">{children}</main>
-				<Footer />
+				<LenisProvider>
+					<Header />
+					<main className="flex-1">{children}</main>
+					<Footer />
+				</LenisProvider>
 			</body>
 		</html>
 	);
