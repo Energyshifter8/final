@@ -32,6 +32,18 @@ export type ServiceItem = {
 	toLabel: string;
 };
 
+export type AwardItem = {
+	title: string;
+	count: number;
+};
+
+export type ScoreboardStat = {
+	id: string;
+	label: string;
+	value: number;
+	suffix?: string;
+};
+
 export type SiteConfig = {
 	name: string;
 	email: string;

@@ -6,7 +6,9 @@ export function Hero() {
 			id="hero"
 			className="flex min-h-[70vh] flex-col justify-center px-6 py-24"
 		>
-			<HeroText />
+			<div className="mx-auto w-full max-w-6xl">
+				<HeroText />
+			</div>
 		</section>
 	);
 }
