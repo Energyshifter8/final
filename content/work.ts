@@ -8,6 +8,11 @@ export const workItems: WorkItem[] = [
 		projectName: "Rebrand & Design System",
 		tags: ["Branding", "Web Design", "Design System"],
 		slug: "aurora-retail",
+		summary:
+			"A full identity overhaul and componentized design system that let Aurora Retail ship consistent, on-brand experiences across web, email, and in-store signage.",
+		coverImageAlt: "Aurora Retail brand identity and design system tokens",
+		role: "Brand & Web Design",
+		year: 2024,
 	},
 	{
 		id: "2",
@@ -16,6 +21,11 @@ export const workItems: WorkItem[] = [
 		projectName: "Product Launch Site",
 		tags: ["Web Design", "Motion", "Development"],
 		slug: "nimbus-media",
+		summary:
+			"A motion-forward marketing site built to introduce Nimbus Media's flagship product, combining scroll-driven storytelling with a lightweight, fast-loading build.",
+		coverImageAlt: "Nimbus Media product launch site hero section",
+		role: "Design & Front-End Development",
+		year: 2024,
 	},
 	{
 		id: "3",
@@ -24,6 +34,11 @@ export const workItems: WorkItem[] = [
 		projectName: "Brand Identity",
 		tags: ["Branding", "Strategy", "Print"],
 		slug: "voltage-labs",
+		summary:
+			"A bold, research-backed identity for Voltage Labs, covering positioning, naming, and a print-ready system for pitch decks and lab signage.",
+		coverImageAlt: "Voltage Labs logo and print collateral mockups",
+		role: "Brand Strategy & Identity",
+		year: 2023,
 	},
 	{
 		id: "4",
@@ -32,6 +47,11 @@ export const workItems: WorkItem[] = [
 		projectName: "E-Commerce Experience",
 		tags: ["Web Design", "E-Commerce", "UX"],
 		slug: "paper-kite",
+		summary:
+			"An end-to-end storefront redesign for Paper Kite Co., focused on a faster checkout flow and a product browsing experience that highlights craftsmanship.",
+		coverImageAlt: "Paper Kite Co. storefront and product listing pages",
+		role: "UX & Web Design",
+		year: 2023,
 	},
 	{
 		id: "5",
@@ -40,6 +60,11 @@ export const workItems: WorkItem[] = [
 		projectName: "Portfolio Platform",
 		tags: ["Web Design", "Development"],
 		slug: "glasshouse",
+		summary:
+			"A custom portfolio platform for Glasshouse's roster of artists, with an editorial layout system that adapts to wildly different bodies of work.",
+		coverImageAlt: "Glasshouse artist portfolio platform grid layout",
+		role: "Design & Development",
+		year: 2022,
 	},
 	{
 		id: "6",
@@ -48,6 +73,11 @@ export const workItems: WorkItem[] = [
 		projectName: "Design System",
 		tags: ["Design System", "Strategy"],
 		slug: "meridian-labs",
+		summary:
+			"A token-based design system for Meridian Labs' internal product teams, cutting design-to-dev handoff time and unifying a dozen disconnected UIs.",
+		coverImageAlt: "Meridian Labs design system component library",
+		role: "Design Systems Lead",
+		year: 2022,
 	},
 	{
 		id: "7",
@@ -56,5 +86,10 @@ export const workItems: WorkItem[] = [
 		projectName: "Marketing Site",
 		tags: ["Web Design", "Motion", "Branding"],
 		slug: "solar-foundry",
+		summary:
+			"A marketing site and light rebrand for Solar Foundry, pairing a warmer visual identity with subtle motion to make a technical product feel approachable.",
+		coverImageAlt: "Solar Foundry marketing site homepage",
+		role: "Brand & Web Design",
+		year: 2021,
 	},
 ];

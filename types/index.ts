@@ -16,6 +16,10 @@ export type WorkItem = {
 	projectName: string;
 	tags: string[];
 	slug: string;
+	summary?: string;
+	coverImageAlt?: string;
+	role?: string;
+	year?: number;
 };
 
 export type SiteConfig = {
