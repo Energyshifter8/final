@@ -18,7 +18,9 @@
       "Bash(npx tsc *)",
       "Bash(node -e \"const g=require\\('/home/temu/final/node_modules/next/dist/compiled/@next/font/google/index.cjs'\\); console.log\\(Object.keys\\(g\\).filter\\(k=>/Bricolage|^Inter$/.test\\(k\\)\\)\\)\")",
       "Bash(node *)",
-      "Bash(kill 40656)"
+      "Bash(kill 40656)",
+      "Bash(awk '{print $2}')",
+      "Bash(xargs -r kill)"
     ]
   }
 }

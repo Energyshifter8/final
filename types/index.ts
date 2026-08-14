@@ -3,6 +3,12 @@ export type NavLink = {
 	href: string;
 };
 
+export type HeroCopy = {
+	greeting: string;
+	name: string;
+	intro: string;
+};
+
 export type SiteConfig = {
 	name: string;
 	email: string;
