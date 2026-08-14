@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --no-eslint --import-alias \"@/*\" --use-npm --yes)",
+      "Bash(mkdir -p /tmp/claude-1000/-home-temu-final/98b9ec63-42e3-47aa-a46c-6ed039c466f6/scratchpad/backup)",
+      "Bash(mv /home/temu/final/CLAUDE.md /tmp/claude-1000/-home-temu-final/98b9ec63-42e3-47aa-a46c-6ed039c466f6/scratchpad/backup/)"
+    ]
+  }
+}
