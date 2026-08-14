@@ -15,7 +15,10 @@
       "Bash(echo \"started PID $!\")",
       "Bash(curl -s http://localhost:3000)",
       "Bash(kill 28973)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Bash(node -e \"const g=require\\('/home/temu/final/node_modules/next/dist/compiled/@next/font/google/index.cjs'\\); console.log\\(Object.keys\\(g\\).filter\\(k=>/Bricolage|^Inter$/.test\\(k\\)\\)\\)\")",
+      "Bash(node *)",
+      "Bash(kill 40656)"
     ]
   }
 }

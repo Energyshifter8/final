@@ -1,0 +1,71 @@
+"use client";
+
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { MobileNav } from "@/components/layout/mobile-nav";
+import { Button } from "@/components/ui/button";
+import {
+	NavigationMenu,
+	NavigationMenuItem,
+	NavigationMenuLink,
+	NavigationMenuList,
+} from "@/components/ui/navigation-menu";
+import { navLinks } from "@/content/nav";
+import { siteConfig } from "@/content/site";
+import { cn } from "@/lib/utils";
+
+export function Header() {
+	const [isScrolled, setIsScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => setIsScrolled(window.scrollY > 8);
+		handleScroll();
+		window.addEventListener("scroll", handleScroll, { passive: true });
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+
+	return (
+		<header
+			className={cn(
+				"sticky top-0 z-50 border-b transition-colors duration-300",
+				isScrolled
+					? "border-border bg-background/70 backdrop-blur-md"
+					: "border-transparent bg-transparent",
+			)}
+		>
+			<div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-6">
+				<Link
+					href="/"
+					className="font-heading text-lg font-bold tracking-tight text-foreground"
+				>
+					{siteConfig.name}
+				</Link>
+
+				<NavigationMenu className="hidden md:flex">
+					<NavigationMenuList className="gap-1">
+						{navLinks.map((link) => (
+							<NavigationMenuItem key={link.href}>
+								<NavigationMenuLink
+									href={link.href}
+									className="rounded-md px-3 py-2 text-sm font-medium tracking-wide text-foreground uppercase hover:bg-transparent hover:text-accent"
+								>
+									{link.label}
+								</NavigationMenuLink>
+							</NavigationMenuItem>
+						))}
+					</NavigationMenuList>
+				</NavigationMenu>
+
+				<Button
+					render={<a href={siteConfig.ctaHref} />}
+					nativeButton={false}
+					className="hidden bg-accent text-accent-foreground hover:bg-accent/90 md:inline-flex"
+				>
+					{siteConfig.ctaLabel}
+				</Button>
+
+				<MobileNav />
+			</div>
+		</header>
+	);
+}
