@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
 import { heroCopy } from "@/content/hero";
+import { prefersReducedMotion } from "@/lib/utils";
 
 gsap.registerPlugin(useGSAP);
 
@@ -14,11 +15,7 @@ export function HeroText() {
 
 	useGSAP(
 		() => {
-			const prefersReducedMotion = window.matchMedia(
-				"(prefers-reduced-motion: reduce)",
-			).matches;
-
-			if (prefersReducedMotion) return;
+			if (prefersReducedMotion()) return;
 
 			gsap.from([headlineRef.current, introRef.current], {
 				opacity: 0,

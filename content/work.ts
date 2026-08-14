@@ -1,0 +1,60 @@
+import type { WorkItem } from "@/types";
+
+export const workItems: WorkItem[] = [
+	{
+		id: "1",
+		clientInitials: "AR",
+		clientName: "Aurora Retail",
+		projectName: "Rebrand & Design System",
+		tags: ["Branding", "Web Design", "Design System"],
+		slug: "aurora-retail",
+	},
+	{
+		id: "2",
+		clientInitials: "NM",
+		clientName: "Nimbus Media",
+		projectName: "Product Launch Site",
+		tags: ["Web Design", "Motion", "Development"],
+		slug: "nimbus-media",
+	},
+	{
+		id: "3",
+		clientInitials: "VL",
+		clientName: "Voltage Labs",
+		projectName: "Brand Identity",
+		tags: ["Branding", "Strategy", "Print"],
+		slug: "voltage-labs",
+	},
+	{
+		id: "4",
+		clientInitials: "PK",
+		clientName: "Paper Kite Co.",
+		projectName: "E-Commerce Experience",
+		tags: ["Web Design", "E-Commerce", "UX"],
+		slug: "paper-kite",
+	},
+	{
+		id: "5",
+		clientInitials: "GL",
+		clientName: "Glasshouse",
+		projectName: "Portfolio Platform",
+		tags: ["Web Design", "Development"],
+		slug: "glasshouse",
+	},
+	{
+		id: "6",
+		clientInitials: "ML",
+		clientName: "Meridian Labs",
+		projectName: "Design System",
+		tags: ["Design System", "Strategy"],
+		slug: "meridian-labs",
+	},
+	{
+		id: "7",
+		clientInitials: "SF",
+		clientName: "Solar Foundry",
+		projectName: "Marketing Site",
+		tags: ["Web Design", "Motion", "Branding"],
+		slug: "solar-foundry",
+	},
+];

@@ -9,6 +9,15 @@ export type HeroCopy = {
 	intro: string;
 };
 
+export type WorkItem = {
+	id: string;
+	clientInitials: string;
+	clientName: string;
+	projectName: string;
+	tags: string[];
+	slug: string;
+};
+
 export type SiteConfig = {
 	name: string;
 	email: string;
