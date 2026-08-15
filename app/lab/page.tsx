@@ -2,9 +2,26 @@ import { ArrowUpRight } from "lucide-react";
 import type { Metadata } from "next";
 import { labEntries } from "@/content/lab";
 
+const title = "Lab";
+const description = "One-off experiments, prototypes, and short write-ups.";
+
 export const metadata: Metadata = {
-	title: "Lab",
-	description: "One-off experiments, prototypes, and short write-ups.",
+	title,
+	description,
+	alternates: {
+		canonical: "/lab",
+	},
+	openGraph: {
+		type: "website",
+		url: "/lab",
+		title,
+		description,
+	},
+	twitter: {
+		card: "summary_large_image",
+		title,
+		description,
+	},
 };
 
 function formatDate(date: string) {

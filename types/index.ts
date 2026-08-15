@@ -57,6 +57,7 @@ export type LabEntry = {
 
 export type SiteConfig = {
 	name: string;
+	url: string;
 	email: string;
 	phone?: string;
 	ctaLabel: string;

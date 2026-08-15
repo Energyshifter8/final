@@ -18,9 +18,27 @@ export async function generateMetadata({
 		return { title: "Project not found" };
 	}
 
+	const title = `${item.projectName} — ${item.clientName}`;
+	const description =
+		item.summary ?? `${item.projectName} for ${item.clientName}.`;
+
 	return {
-		title: `${item.projectName} — ${item.clientName}`,
-		description: item.summary,
+		title,
+		description,
+		alternates: {
+			canonical: `/work/${slug}`,
+		},
+		openGraph: {
+			type: "article",
+			url: `/work/${slug}`,
+			title,
+			description,
+		},
+		twitter: {
+			card: "summary_large_image",
+			title,
+			description,
+		},
 	};
 }
 

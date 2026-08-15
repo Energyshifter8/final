@@ -5,7 +5,10 @@ export function AwardsMarquee() {
 
 	return (
 		<div className="group w-full min-w-0 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-			<div className="flex w-max animate-marquee gap-12 group-hover:[animation-play-state:paused] motion-reduce:animate-none">
+			<div
+				aria-hidden="true"
+				className="flex w-max animate-marquee gap-12 group-hover:[animation-play-state:paused] motion-reduce:animate-none"
+			>
 				{track.map((award, index) => (
 					<div
 						// biome-ignore lint/suspicious/noArrayIndexKey: static, never-reordered duplicated list — index is needed since titles repeat across the two halves
@@ -19,6 +22,13 @@ export function AwardsMarquee() {
 					</div>
 				))}
 			</div>
+			<ul className="sr-only">
+				{awards.map((award) => (
+					<li key={award.title}>
+						{award.count} {award.title}
+					</li>
+				))}
+			</ul>
 		</div>
 	);
 }
