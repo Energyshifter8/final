@@ -1,7 +1,7 @@
 import { ArrowLeft, ChevronRight } from "lucide-react";
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import { TransitionLink } from "@/components/transition-link";
 import { workItems } from "@/content/work";
 
 export function generateStaticParams() {
@@ -42,13 +42,13 @@ export default async function WorkCaseStudyPage({
 
 	return (
 		<div className="mx-auto flex max-w-3xl flex-col gap-10 px-6 py-24">
-			<Link
+			<TransitionLink
 				href="/"
 				className="inline-flex w-fit items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-accent"
 			>
 				<ArrowLeft className="size-4" aria-hidden="true" />
 				Back to home
-			</Link>
+			</TransitionLink>
 
 			{meta.length > 0 && (
 				<div className="flex flex-wrap gap-x-8 gap-y-4">

@@ -4,8 +4,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ChevronRight } from "lucide-react";
-import Link from "next/link";
 import { useRef } from "react";
+import { TransitionLink } from "@/components/transition-link";
 import { Badge } from "@/components/ui/badge";
 import { prefersReducedMotion } from "@/lib/use-reduced-motion";
 import type { WorkItem } from "@/types";
@@ -41,7 +41,7 @@ export function WorkCard({ item, index }: WorkCardProps) {
 	);
 
 	return (
-		<Link
+		<TransitionLink
 			ref={cardRef}
 			href={`/work/${item.slug}`}
 			data-work-card
@@ -74,6 +74,6 @@ export function WorkCard({ item, index }: WorkCardProps) {
 					</li>
 				))}
 			</ul>
-		</Link>
+		</TransitionLink>
 	);
 }
