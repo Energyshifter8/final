@@ -48,6 +48,13 @@ export type ContactCopy = {
 	headline: string;
 };
 
+export type LabEntry = {
+	title: string;
+	description: string;
+	href: string;
+	date: string;
+};
+
 export type SiteConfig = {
 	name: string;
 	email: string;
