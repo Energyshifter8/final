@@ -13,6 +13,8 @@ export const workItems: WorkItem[] = [
 		coverImageAlt: "Sysco&Tech dashboard with task list and points leaderboard",
 		role: "Full-Stack Development",
 		year: 2026,
+		liveUrl: "https://sysco-app.vercel.app",
+		githubUrl: "https://github.com/Energyshifter8/sysco_app",
 	},
 	{
 		id: "2",
@@ -26,6 +28,8 @@ export const workItems: WorkItem[] = [
 		coverImageAlt: "DevDreams interactive roadmap canvas with AI chat panel",
 		role: "Full-Stack Development & AI Integration",
 		year: 2026,
+		liveUrl: "https://roadmap-theta-eosin.vercel.app",
+		githubUrl: "https://github.com/Energyshifter8/roadmap",
 	},
 	{
 		id: "3",
@@ -52,5 +56,7 @@ export const workItems: WorkItem[] = [
 		coverImageAlt: "Kanban task board with drag-and-drop columns",
 		role: "Front-End Development",
 		year: 2026,
+		liveUrl: "https://my-app-nine-mocha-55.vercel.app",
+		githubUrl: "https://github.com/Energyshifter8/my-app",
 	},
 ];

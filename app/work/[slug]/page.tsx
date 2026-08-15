@@ -1,7 +1,8 @@
-import { ArrowLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, ChevronRight, Code2, ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { TransitionLink } from "@/components/transition-link";
+import { Button } from "@/components/ui/button";
 import { workItems } from "@/content/work";
 
 export function generateStaticParams() {
@@ -101,6 +102,43 @@ export default async function WorkCaseStudyPage({
 				<p className="max-w-2xl text-lg text-muted-foreground">
 					{item.summary}
 				</p>
+			)}
+
+			{(item.liveUrl || item.githubUrl) && (
+				<div className="flex flex-wrap gap-3">
+					{item.liveUrl && (
+						<Button
+							render={
+								<a
+									href={item.liveUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								/>
+							}
+							nativeButton={false}
+							className="bg-accent text-accent-foreground hover:bg-accent/90"
+						>
+							<ExternalLink aria-hidden="true" />
+							View live site
+						</Button>
+					)}
+					{item.githubUrl && (
+						<Button
+							render={
+								<a
+									href={item.githubUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								/>
+							}
+							nativeButton={false}
+							variant="outline"
+						>
+							<Code2 aria-hidden="true" />
+							View code
+						</Button>
+					)}
+				</div>
 			)}
 
 			<div

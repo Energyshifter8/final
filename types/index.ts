@@ -20,6 +20,8 @@ export type WorkItem = {
 	coverImageAlt?: string;
 	role?: string;
 	year?: number;
+	liveUrl?: string;
+	githubUrl?: string;
 };
 
 export type ServiceItem = {
