@@ -1,4 +1,4 @@
-# Project: [Your Name] — Portfolio Site
+# Project: [Temuulen] — Portfolio Site
 
 ## Who this is for
 [Temuulen], a [your role, e.g. "freelance product designer & front-end developer"]
