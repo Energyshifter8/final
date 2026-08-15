@@ -32,11 +32,6 @@ export type ServiceItem = {
 	toLabel: string;
 };
 
-export type AwardItem = {
-	title: string;
-	count: number;
-};
-
 export type ScoreboardStat = {
 	id: string;
 	label: string;

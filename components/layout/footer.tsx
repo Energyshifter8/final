@@ -35,7 +35,7 @@ export function Footer() {
 				</div>
 				<Separator />
 				<p className="text-sm text-muted-foreground">
-					© {year} {siteConfig.name}. All rights reserved.
+					© {year} {siteConfig.name.replace(/\.$/, "")}. All rights reserved.
 				</p>
 			</div>
 		</footer>

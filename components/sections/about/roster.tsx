@@ -5,7 +5,7 @@ export function Roster() {
 	return (
 		<div className="flex flex-col gap-4">
 			<p className="text-xs font-medium tracking-widest text-muted-foreground uppercase">
-				Past Clients
+				Built For
 			</p>
 			<ul className="flex flex-wrap gap-2">
 				{roster.map((client) => (

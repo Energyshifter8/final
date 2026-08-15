@@ -1,10 +1,9 @@
 import type { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
-	name: "[Your Name]",
+	name: "Temuulen B.",
 	url: "https://your-domain.com",
-	email: "[you@example.com]",
-	phone: "[+976 0000 0000]",
-	ctaLabel: "[Let's talk]",
-	ctaHref: "#",
+	email: "B241910044@must.edu.mn",
+	ctaLabel: "Let's talk",
+	ctaHref: "#contact",
 };

@@ -1,5 +1,4 @@
 import { AboutBio } from "@/components/sections/about/about-section";
-import { AwardsMarquee } from "@/components/sections/about/awards-marquee";
 import { Roster } from "@/components/sections/about/roster";
 import { Scoreboard } from "@/components/sections/about/scoreboard";
 
@@ -13,7 +12,6 @@ export function AboutSection() {
 					<Scoreboard />
 				</div>
 			</div>
-			<AwardsMarquee />
 		</section>
 	);
 }
