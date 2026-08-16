@@ -1,70 +1,34 @@
 import type { ServiceItem } from "@/types";
 
 export const servicesIntro =
-	"A focused set of services spanning strategy, design, and front-end development — everything needed to take an idea from rough sketch to shipped product.";
+	"A focused set of skills spanning front-end development, motion design, and API integration — everything needed to turn a Figma file or a Swagger spec into a shipped product.";
 
 export const serviceItems: ServiceItem[] = [
 	{
 		id: "1",
-		code: "STR",
-		title: "Strategy",
-		primaryTags: ["Research", "Workshops"],
-		secondaryTags: ["Personas", "Roadmapping"],
-		fromLabel: "Problem",
-		toLabel: "Direction",
-	},
-	{
-		id: "2",
-		code: "UXD",
-		title: "UX Design",
-		primaryTags: ["Wireframes", "User Flows"],
-		secondaryTags: ["Usability Testing", "Journey Maps"],
-		fromLabel: "Wireframe",
-		toLabel: "Prototype",
-	},
-	{
-		id: "3",
-		code: "UID",
-		title: "UI Design",
-		primaryTags: ["Visual Design", "Design Systems"],
-		secondaryTags: ["Iconography", "Illustration"],
-		fromLabel: "Sketch",
-		toLabel: "Pixel-Perfect",
-	},
-	{
-		id: "4",
 		code: "DEV",
 		title: "Front-End Development",
 		primaryTags: ["React", "Next.js"],
-		secondaryTags: ["Accessibility", "Performance"],
+		secondaryTags: ["TypeScript", "Tailwind CSS"],
 		fromLabel: "Design",
 		toLabel: "Production",
 	},
 	{
-		id: "5",
-		code: "BRD",
-		title: "Brand Identity",
-		primaryTags: ["Logo", "Guidelines"],
-		secondaryTags: ["Voice & Tone", "Print"],
-		fromLabel: "Concept",
-		toLabel: "System",
-	},
-	{
-		id: "6",
+		id: "2",
 		code: "MOT",
 		title: "Motion Design",
-		primaryTags: ["Micro-interactions", "Scroll Animation"],
-		secondaryTags: ["Prototyping", "Storyboards"],
+		primaryTags: ["GSAP", "ScrollTrigger"],
+		secondaryTags: ["Figma Prototyping", "Micro-interactions"],
 		fromLabel: "Static",
 		toLabel: "Alive",
 	},
 	{
-		id: "7",
-		code: "OPS",
-		title: "Design Ops",
-		primaryTags: ["Component Libraries", "Tokens"],
-		secondaryTags: ["Documentation", "Handoff"],
-		fromLabel: "Chaos",
-		toLabel: "System",
+		id: "3",
+		code: "API",
+		title: "API Integration",
+		primaryTags: ["Swagger / OpenAPI", "REST"],
+		secondaryTags: ["Type-Safe Fetching", "Auth & Tokens"],
+		fromLabel: "Swagger Docs",
+		toLabel: "Live Data",
 	},
 ];

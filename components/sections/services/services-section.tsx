@@ -7,7 +7,7 @@ export function ServicesSection() {
 			<div className="mx-auto flex max-w-6xl flex-col gap-12">
 				<div className="flex flex-col gap-4">
 					<h2 className="font-heading text-3xl font-bold tracking-tight text-foreground">
-						Services
+						Skill
 					</h2>
 					<p className="max-w-2xl text-lg text-muted-foreground">
 						{servicesIntro}
