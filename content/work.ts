@@ -48,14 +48,14 @@ export const workItems: WorkItem[] = [
 	},
 	{
 		id: "4",
-		clientInitials: "KB",
+		clientInitials: "TB",
 		clientName: "Personal Project",
-		projectName: "Kanban Task Board",
+		projectName: "Todo Task Board",
 		tags: ["Next.js", "shadcn/ui", "TanStack"],
-		slug: "kanban-board",
+		slug: "todo-task-board",
 		summary:
 			"A drag-and-drop task board built to get hands-on with shadcn/ui and TanStack Query and Table — a practice project rather than a client build, but real mileage on real tools.",
-		coverImageAlt: "Kanban task board with drag-and-drop columns",
+		coverImageAlt: "Todo task board with drag-and-drop columns",
 		role: "Front-End Development",
 		year: 2026,
 		liveUrl: "https://my-app-nine-mocha-55.vercel.app",
