@@ -9,7 +9,7 @@ export const serviceItems: ServiceItem[] = [
 		code: "DEV",
 		title: "Front-End Development",
 		primaryTags: ["React", "Next.js"],
-		secondaryTags: ["TypeScript", "Tailwind CSS", "Git", "GitHub"],
+		secondaryTags: ["TypeScript", "Tailwind CSS"],
 		fromLabel: "Design",
 		toLabel: "Production",
 	},
@@ -30,5 +30,14 @@ export const serviceItems: ServiceItem[] = [
 		secondaryTags: ["Type-Safe Fetching", "Auth & Tokens"],
 		fromLabel: "Swagger Docs",
 		toLabel: "Live Data",
+	},
+	{
+		id: "4",
+		code: "VCS",
+		title: "Version Control",
+		primaryTags: ["Git", "GitHub"],
+		secondaryTags: ["Branching Strategy", "Pull Requests"],
+		fromLabel: "Local Changes",
+		toLabel: "Shipped Code",
 	},
 ];
