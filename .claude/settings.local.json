@@ -29,7 +29,11 @@
       "Bash(lsof -ti:3000,3001)",
       "Bash(disown)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4173/)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "Bash(identify public/lemon.png)",
+      "Bash(convert lemon.png -filter point -resize 8% -resize 800% lemon-pixelated.png)",
+      "Bash(identify lemon-pixelated.png)",
+      "Bash(magick lemon.png -filter point -resize 4% -resize 812x926 lemon-pixelated.png)"
     ]
   }
 }
