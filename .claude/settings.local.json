@@ -26,7 +26,10 @@
       "Bash(npm view *)",
       "Bash(pkill -f \"next dev\")",
       "Bash(pkill -f \"next-server\\\\|next dev\")",
-      "Bash(lsof -ti:3000,3001)"
+      "Bash(lsof -ti:3000,3001)",
+      "Bash(disown)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4173/)",
+      "Bash(curl *)"
     ]
   }
 }

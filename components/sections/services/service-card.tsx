@@ -3,12 +3,24 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ArrowRight } from "lucide-react";
+import {
+	ArrowRight,
+	Code2,
+	type LucideIcon,
+	Sparkles,
+	Webhook,
+} from "lucide-react";
 import { useRef } from "react";
 import { prefersReducedMotion } from "@/lib/use-reduced-motion";
 import type { ServiceItem } from "@/types";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+const CODE_ICONS: Record<string, LucideIcon> = {
+	DEV: Code2,
+	MOT: Sparkles,
+	API: Webhook,
+};
 
 type ServiceCardProps = {
 	item: ServiceItem;
@@ -16,6 +28,7 @@ type ServiceCardProps = {
 
 export function ServiceCard({ item }: ServiceCardProps) {
 	const cardRef = useRef<HTMLElement>(null);
+	const Icon = CODE_ICONS[item.code] ?? Sparkles;
 
 	useGSAP(
 		() => {
@@ -40,9 +53,21 @@ export function ServiceCard({ item }: ServiceCardProps) {
 	return (
 		<article
 			ref={cardRef}
-			className="flex flex-col gap-6 rounded-2xl border border-border bg-card p-6"
+			className="group relative flex flex-col gap-6 overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-xl hover:shadow-accent/10"
 		>
-			<p className="font-heading text-5xl font-bold text-accent">{item.code}</p>
+			<div
+				aria-hidden="true"
+				className="pointer-events-none absolute -top-10 -right-10 size-36 rounded-full bg-accent/10 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100"
+			/>
+
+			<div className="flex items-center justify-between">
+				<p className="font-heading text-5xl font-bold text-accent/25 transition-colors duration-300 group-hover:text-accent/40">
+					{item.code}
+				</p>
+				<span className="flex size-11 items-center justify-center rounded-xl bg-accent/10 text-accent transition-transform duration-300 group-hover:scale-110">
+					<Icon className="size-5" aria-hidden="true" />
+				</span>
+			</div>
 
 			<div className="flex flex-col gap-4">
 				<h3 className="font-heading text-xl font-bold tracking-tight text-foreground">
@@ -53,7 +78,7 @@ export function ServiceCard({ item }: ServiceCardProps) {
 					{item.primaryTags.map((tag) => (
 						<li
 							key={tag}
-							className="service-card-tag rounded-full bg-muted px-2.5 py-1 text-xs font-medium text-foreground"
+							className="service-card-tag rounded-full border border-accent/20 bg-accent/5 px-2.5 py-1 text-xs font-medium text-foreground"
 						>
 							{tag}
 						</li>
@@ -72,10 +97,13 @@ export function ServiceCard({ item }: ServiceCardProps) {
 				</ul>
 			</div>
 
-			<div className="mt-auto flex items-center gap-2 text-sm text-muted-foreground">
+			<div className="mt-auto flex items-center gap-2 border-t border-border pt-4 text-sm text-muted-foreground">
 				<span>{item.fromLabel}</span>
-				<ArrowRight className="size-4 text-accent" aria-hidden="true" />
-				<span>{item.toLabel}</span>
+				<ArrowRight
+					className="size-4 text-accent transition-transform duration-300 group-hover:translate-x-1"
+					aria-hidden="true"
+				/>
+				<span className="font-medium text-foreground">{item.toLabel}</span>
 			</div>
 		</article>
 	);
