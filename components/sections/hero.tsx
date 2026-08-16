@@ -9,15 +9,18 @@ export function Hero() {
 		>
 			<div className="mx-auto grid w-full max-w-6xl items-center gap-12 md:grid-cols-2">
 				<HeroText />
-				<div className="relative mx-auto aspect-[812/926] w-full max-w-sm overflow-hidden rounded-2xl border-4 border-foreground md:mx-0 md:justify-self-end">
-					<Image
-						src="/lemon.png"
-						alt="Portrait of Temuulen"
-						fill
-						priority
-						sizes="(min-width: 768px) 24rem, 80vw"
-						className="object-cover"
-					/>
+				<div className="relative mx-auto w-full max-w-sm md:mx-0 md:justify-self-end">
+					<div className="absolute inset-0 rotate-3 rounded-2xl border-4 border-accent" />
+					<div className="relative aspect-[812/926] w-full -rotate-2 overflow-hidden rounded-2xl border-4 border-foreground shadow-xl">
+						<Image
+							src="/lemon.png"
+							alt="Portrait of Temuulen"
+							fill
+							priority
+							sizes="(min-width: 768px) 24rem, 80vw"
+							className="object-cover"
+						/>
+					</div>
 				</div>
 			</div>
 		</section>
