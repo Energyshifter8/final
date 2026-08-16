@@ -1,12 +1,12 @@
-import { bioParagraphs } from "@/content/about";
+import { descriptionParagraphs } from "@/content/about";
 
-export function AboutBio() {
+export function AboutDescription() {
 	return (
 		<div className="flex flex-col gap-4">
 			<h2 className="font-heading text-3xl font-bold tracking-tight text-foreground">
-				Bio
+				Тайлбар
 			</h2>
-			{bioParagraphs.map((paragraph) => (
+			{descriptionParagraphs.map((paragraph) => (
 				<p key={paragraph} className="max-w-2xl text-lg text-muted-foreground">
 					{paragraph}
 				</p>

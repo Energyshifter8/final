@@ -1,4 +1,4 @@
-export const bioParagraphs: string[] = [
-	"I'm a Computer Science student in Ulaanbaatar who designs and builds full-stack products end to end — from Figma-free, code-first UI to the Next.js, TypeScript, and Firebase underneath it.",
-	"I like shipping things real people use: a points-based platform for my university club, an AI-assisted roadmap tool with voice input and RAG-powered chat, and admin dashboards that make messy data legible. Craft in the details, no wasted motion.",
+export const descriptionParagraphs: string[] = [
+	"Би Улаанбаатар хотод суралцдаг Компьютерийн ухааны оюутан бөгөөд Figma ашиглалгүйгээр, шууд кодоор UI-гаа бүтээж, Next.js, TypeScript, Firebase зэрэг технологи ашиглан full-stack бүтээгдэхүүнийг эхнээс нь эцэс хүртэл бүрэн хөгжүүлдэг.",
+	"Би жинхэнэ хүмүүс хэрэглэдэг зүйл бүтээхийг эрхэмлэдэг: их сургуулийнхаа клубт зориулсан оноон дээр суурилсан платформ, дуут оролт болон RAG технологи ашигласан чатбот бүхий AI дэмжлэгтэй roadmap хэрэгсэл, мөн эмх замбараагүй өгөгдлийг ойлгомжтой болгодог админ хяналтын самбарууд зэргийг бүтээсэн. Жижиг нарийн ширийн зүйлд анхаарал тавьдаг, илүүц хөдөлгөөнгүй.",
 ];
