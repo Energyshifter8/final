@@ -33,7 +33,8 @@
       "Bash(identify public/lemon.png)",
       "Bash(convert lemon.png -filter point -resize 8% -resize 800% lemon-pixelated.png)",
       "Bash(identify lemon-pixelated.png)",
-      "Bash(magick lemon.png -filter point -resize 4% -resize 812x926 lemon-pixelated.png)"
+      "Bash(magick lemon.png -filter point -resize 4% -resize 812x926 lemon-pixelated.png)",
+      "Bash(identify lemon.png)"
     ]
   }
 }

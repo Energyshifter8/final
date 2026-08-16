@@ -11,7 +11,7 @@ export function Hero() {
 				<HeroText />
 				<div className="relative mx-auto aspect-[801/926] w-full max-w-sm overflow-hidden rounded-2xl md:mx-0 md:justify-self-end">
 					<Image
-						src="/lemon-pixelated.png"
+						src="/lemon.png"
 						alt="Pixelated portrait of Temuulen"
 						fill
 						priority
