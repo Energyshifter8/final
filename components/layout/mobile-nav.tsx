@@ -44,8 +44,8 @@ export function MobileNav() {
 						</SheetClose>
 					))}
 				</nav>
-				<div className="mt-auto flex flex-col gap-2 p-4">
-					{siteConfig.githubUrl && (
+				{siteConfig.githubUrl && (
+					<div className="mt-auto p-4">
 						<Button
 							render={
 								<a
@@ -61,15 +61,8 @@ export function MobileNav() {
 							<GithubIcon className="size-4" aria-hidden="true" />
 							GitHub
 						</Button>
-					)}
-					<Button
-						render={<a href={siteConfig.ctaHref} />}
-						nativeButton={false}
-						className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
-					>
-						{siteConfig.ctaLabel}
-					</Button>
-				</div>
+					</div>
+				)}
 			</SheetContent>
 		</Sheet>
 	);

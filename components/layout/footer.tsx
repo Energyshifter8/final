@@ -1,3 +1,4 @@
+import { GithubIcon } from "@/components/icons/github-icon";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { siteConfig } from "@/content/site";
@@ -8,30 +9,27 @@ export function Footer() {
 	return (
 		<footer className="border-t border-border bg-background">
 			<div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-16">
-				<div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-					<div className="flex flex-col gap-1">
-						<a
-							href={`mailto:${siteConfig.email}`}
-							className="font-heading text-2xl font-bold tracking-tight text-foreground hover:text-accent"
+				<div className="flex items-center justify-between gap-6">
+					<p className="font-heading text-2xl font-bold tracking-tight text-foreground">
+						{siteConfig.name}
+					</p>
+					{siteConfig.githubUrl && (
+						<Button
+							render={
+								<a
+									href={siteConfig.githubUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								/>
+							}
+							nativeButton={false}
+							variant="ghost"
+							size="icon"
 						>
-							{siteConfig.email}
-						</a>
-						{siteConfig.phone && (
-							<a
-								href={`tel:${siteConfig.phone}`}
-								className="text-sm text-muted-foreground hover:text-foreground"
-							>
-								{siteConfig.phone}
-							</a>
-						)}
-					</div>
-					<Button
-						render={<a href={siteConfig.ctaHref} />}
-						nativeButton={false}
-						className="bg-accent text-accent-foreground hover:bg-accent/90"
-					>
-						{siteConfig.ctaLabel}
-					</Button>
+							<GithubIcon className="size-4" aria-hidden="true" />
+							<span className="sr-only">GitHub profile</span>
+						</Button>
+					)}
 				</div>
 				<Separator />
 				<p className="text-sm text-muted-foreground">

@@ -41,10 +41,6 @@ export type ScoreboardStat = {
 	suffix?: string;
 };
 
-export type ContactCopy = {
-	headline: string;
-};
-
 export type LabEntry = {
 	title: string;
 	description: string;
@@ -55,9 +51,5 @@ export type LabEntry = {
 export type SiteConfig = {
 	name: string;
 	url: string;
-	email: string;
-	phone?: string;
 	githubUrl?: string;
-	ctaLabel: string;
-	ctaHref: string;
 };

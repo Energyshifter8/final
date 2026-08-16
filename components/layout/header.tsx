@@ -78,32 +78,24 @@ export function Header() {
 					</NavigationMenuList>
 				</NavigationMenu>
 
-				<div className="hidden items-center gap-2 md:flex">
-					{siteConfig.githubUrl && (
-						<Button
-							render={
-								<a
-									href={siteConfig.githubUrl}
-									target="_blank"
-									rel="noopener noreferrer"
-								/>
-							}
-							nativeButton={false}
-							variant="ghost"
-							size="icon"
-						>
-							<GithubIcon className="size-4" aria-hidden="true" />
-							<span className="sr-only">GitHub profile</span>
-						</Button>
-					)}
+				{siteConfig.githubUrl && (
 					<Button
-						render={<a href={siteConfig.ctaHref} />}
+						render={
+							<a
+								href={siteConfig.githubUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+							/>
+						}
 						nativeButton={false}
-						className="bg-accent text-accent-foreground hover:bg-accent/90"
+						variant="ghost"
+						size="icon"
+						className="hidden md:inline-flex"
 					>
-						{siteConfig.ctaLabel}
+						<GithubIcon className="size-4" aria-hidden="true" />
+						<span className="sr-only">GitHub profile</span>
 					</Button>
-				</div>
+				)}
 
 				<MobileNav />
 			</div>
