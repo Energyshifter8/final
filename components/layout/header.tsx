@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { GithubIcon } from "@/components/icons/github-icon";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { Button } from "@/components/ui/button";
 import {
@@ -77,13 +78,32 @@ export function Header() {
 					</NavigationMenuList>
 				</NavigationMenu>
 
-				<Button
-					render={<a href={siteConfig.ctaHref} />}
-					nativeButton={false}
-					className="hidden bg-accent text-accent-foreground hover:bg-accent/90 md:inline-flex"
-				>
-					{siteConfig.ctaLabel}
-				</Button>
+				<div className="hidden items-center gap-2 md:flex">
+					{siteConfig.githubUrl && (
+						<Button
+							render={
+								<a
+									href={siteConfig.githubUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								/>
+							}
+							nativeButton={false}
+							variant="ghost"
+							size="icon"
+						>
+							<GithubIcon className="size-4" aria-hidden="true" />
+							<span className="sr-only">GitHub profile</span>
+						</Button>
+					)}
+					<Button
+						render={<a href={siteConfig.ctaHref} />}
+						nativeButton={false}
+						className="bg-accent text-accent-foreground hover:bg-accent/90"
+					>
+						{siteConfig.ctaLabel}
+					</Button>
+				</div>
 
 				<MobileNav />
 			</div>

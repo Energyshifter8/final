@@ -2,6 +2,7 @@
 
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import { GithubIcon } from "@/components/icons/github-icon";
 import { Button } from "@/components/ui/button";
 import {
 	Sheet,
@@ -43,7 +44,24 @@ export function MobileNav() {
 						</SheetClose>
 					))}
 				</nav>
-				<div className="mt-auto p-4">
+				<div className="mt-auto flex flex-col gap-2 p-4">
+					{siteConfig.githubUrl && (
+						<Button
+							render={
+								<a
+									href={siteConfig.githubUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								/>
+							}
+							nativeButton={false}
+							variant="outline"
+							className="w-full"
+						>
+							<GithubIcon className="size-4" aria-hidden="true" />
+							GitHub
+						</Button>
+					)}
 					<Button
 						render={<a href={siteConfig.ctaHref} />}
 						nativeButton={false}

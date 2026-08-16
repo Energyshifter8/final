@@ -57,6 +57,7 @@ export type SiteConfig = {
 	url: string;
 	email: string;
 	phone?: string;
+	githubUrl?: string;
 	ctaLabel: string;
 	ctaHref: string;
 };
