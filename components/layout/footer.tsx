@@ -14,19 +14,19 @@ export function Footer() {
 						{siteConfig.name}
 					</p>
 					{siteConfig.githubUrl && (
-						<Button
-							render={
-								<a
-									href={siteConfig.githubUrl}
-									target="_blank"
-									rel="noopener noreferrer"
-								/>
-							}
-							nativeButton={false}
-							variant="ghost"
-							size="icon"
-						>
-							<GithubIcon className="size-4" aria-hidden="true" />
+					<Button
+						render={
+							<a
+								href={siteConfig.githubUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+							/>
+						}
+						nativeButton={false}
+						variant="ghost"
+						size="icon-lg"
+					>
+						<GithubIcon className="size-5" aria-hidden="true" />
 							<span className="sr-only">GitHub profile</span>
 						</Button>
 					)}

@@ -9,7 +9,7 @@ export const serviceItems: ServiceItem[] = [
 		code: "DEV",
 		title: "Front-End Development",
 		primaryTags: ["React", "Next.js"],
-		secondaryTags: ["TypeScript", "Tailwind CSS"],
+		secondaryTags: ["TypeScript", "Tailwind CSS", "Git", "GitHub"],
 		fromLabel: "Design",
 		toLabel: "Production",
 	},

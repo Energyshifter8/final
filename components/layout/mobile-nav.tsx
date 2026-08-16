@@ -58,7 +58,7 @@ export function MobileNav() {
 							variant="outline"
 							className="w-full"
 						>
-							<GithubIcon className="size-4" aria-hidden="true" />
+							<GithubIcon className="size-5" aria-hidden="true" />
 							GitHub
 						</Button>
 					</div>

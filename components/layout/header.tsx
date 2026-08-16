@@ -89,10 +89,10 @@ export function Header() {
 						}
 						nativeButton={false}
 						variant="ghost"
-						size="icon"
+						size="icon-lg"
 						className="hidden md:inline-flex"
 					>
-						<GithubIcon className="size-4" aria-hidden="true" />
+						<GithubIcon className="size-5" aria-hidden="true" />
 						<span className="sr-only">GitHub profile</span>
 					</Button>
 				)}
