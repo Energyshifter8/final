@@ -43,6 +43,8 @@ export const workItems: WorkItem[] = [
 		coverImageAlt: "MindX Plus dashboard stat cards and data tables",
 		role: "Front-End Development",
 		year: 2026,
+		liveUrl: "https://mindxplus-v2.vercel.app",
+		githubUrl: "https://github.com/Energyshifter8/mindxplusV2",
 	},
 	{
 		id: "4",
