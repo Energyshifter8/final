@@ -26,7 +26,7 @@ export const serviceItems: ServiceItem[] = [
 		id: "3",
 		code: "API",
 		title: "API Integration",
-		primaryTags: ["Swagger / OpenAPI", "REST"],
+		primaryTags: ["Swagger / OpenAPI", "Tanstack Query"],
 		secondaryTags: ["Type-Safe Fetching", "Auth & Tokens"],
 		fromLabel: "Swagger Docs",
 		toLabel: "Live Data",
