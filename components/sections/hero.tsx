@@ -10,10 +10,10 @@ export function Hero() {
 			<div className="mx-auto grid w-full max-w-6xl items-center gap-12 md:grid-cols-2">
 				<HeroText />
 				<div className="relative mx-auto w-full max-w-sm md:justify-self-center">
-				<div className="absolute inset-0 rotate-3 rounded-2xl" />
-				<div className="relative aspect-[812/926] w-full -rotate-2 overflow-hidden rounded-2xl shadow-xl">
+				<div className="absolute inset-0 rounded-2xl" />
+				<div className="relative aspect-square w-full overflow-hidden rounded-2xl shadow-xl">
 						<Image
-							src="/lemon.png"
+							src="/IMG_3670.JPG"
 							alt="Portrait of Temuulen"
 							fill
 							priority
