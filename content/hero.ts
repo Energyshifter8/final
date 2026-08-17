@@ -4,5 +4,5 @@ export const heroCopy: HeroCopy = {
 	greeting: "Hi, I'm",
 	name: "Temuulen [intern]",
 	intro:
-		"A front-end intern at Tanasoft LLC — I build interfaces that feel as good as they look.",
+		"A front-end intern at Tanasoft LLC",
 };
