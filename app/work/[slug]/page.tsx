@@ -140,12 +140,6 @@ export default async function WorkCaseStudyPage({
 					)}
 				</div>
 			)}
-
-			<div
-				role="img"
-				aria-label={item.coverImageAlt ?? `${item.projectName} cover image`}
-				className="aspect-video w-full rounded-2xl border border-border bg-card"
-			/>
-		</div>
+	</div>
 	);
 }
